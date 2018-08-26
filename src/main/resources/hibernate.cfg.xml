@@ -46,5 +46,7 @@ Contributor(s):
     <property name="hibernate.connection.password">asddsa1122</property>
     <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/postgres</property>
     <property name="hibernate.connection.pool_size">1</property>
+    
+    <mapping class="com.todoweb.models.PgTasks"/>
   </session-factory>
 </hibernate-configuration>

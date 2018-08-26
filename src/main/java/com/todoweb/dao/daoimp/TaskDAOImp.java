@@ -15,7 +15,8 @@ import javax.swing.*;
 import org.hibernate.Session;
 import org.hibernate.Query;
 import com.todoweb.dao.TaskDAO;
-
+import org.springframework.stereotype.Repository;
+@Repository
 public class TaskDAOImp implements TaskDAO {
 
   public void addTask(PgTasks task) throws SQLException {
@@ -67,7 +68,7 @@ public class TaskDAOImp implements TaskDAO {
     return task;
   }
 
-  public Collection getAllTasks() throws SQLException {
+  public List getAllTasks() throws SQLException {
     Session session = null;
     List tasks = new ArrayList<PgTasks>();
     try {
